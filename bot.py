@@ -39,7 +39,7 @@ def handle_command(call):
     }
 
     if call.data in commands:
-        url = f"https://your-server-url.onrender.com/command?cmd={commands[call.data]}"
+        url = f"https://tr-zz39.onrender.com/command?cmd={commands[call.data]}"
         response = requests.get(url).json()
         
         if "output" in response:
